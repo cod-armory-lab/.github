@@ -1,0 +1,8 @@
+# Default owners
+* @cod-armory-lab/maintainers
+
+# Data changes
+**/data/** @cod-armory-lab/data-curators
+
+# API core (si tu mets /src, /internal, etc.)
+**/api/** @cod-armory-lab/maintainers

@@ -1,0 +1,48 @@
+name: Data update (patch / balance)
+description: Track patch-driven data changes (weapons, attachments, overrides).
+title: "[Data]: "
+labels: ["type:data-update", "area:data"]
+body:
+  - type: input
+    id: patch_id
+    attributes:
+      label: Patch ID
+      description: Example: MWIII-S05-HOTFIX-2024-07-24
+      placeholder: MWIII-...
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Source link(s)
+      description: Patch notes, season notes, official posts.
+      placeholder: |
+        - https://...
+        - https://...
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes
+    attributes:
+      label: Changes summary (before/after)
+      description: List impacted items + what changed.
+      placeholder: |
+        - Weapon/Attachment ID: ...
+          - Before: ...
+          - After: ...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Data rules checklist
+      options:
+        - label: Immutable IDs are not deleted or reused
+          required: true
+        - label: Changes are represented as overrides (not rewriting history)
+          required: true
+        - label: Patch scope is clear and limited
+          required: true
