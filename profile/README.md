@@ -1,3 +1,5 @@
+![Cod Armory Lab](assets/hero.png)
+
 # Cod Armory Lab
 
 > **Play armed. Play smart.**
