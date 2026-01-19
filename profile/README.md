@@ -1,5 +1,3 @@
-![Cod Armory Lab](../assets/hero.png)
-
 # Cod Armory Lab
 
 > **Play armed. Play smart.**
@@ -9,6 +7,9 @@ Cod Armory Lab is a **player‑centric platform** designed to help players stay 
 While the project is currently **private**, its vision remains deeply rooted in the **gaming experience**: helping players consistently make the **right loadout choices**, without exposing them to unnecessary technical or analytical complexity.
 
 ---
+
+
+![Cod Armory Lab](../assets/hero.png)
 
 ## 🎮 What is Cod Armory Lab?
 
