@@ -1,38 +1,135 @@
 # Cod Armory Lab
 
-A player-focused, version-resilient data platform for Call of Duty weapons, attachments, and loadouts.
+> **Play armed. Play smart.**
 
-Cod Armory Lab is designed to keep weapon/build data stable across seasons, patches, and hotfixes so players can reliably compare changes over time — before/after a patch — with full traceability.
+Cod Armory Lab is a **player‑centric platform** designed to help players stay optimally equipped across patches, seasons, and balance updates.
 
-## Repositories
+While the project is currently **private**, its vision remains deeply rooted in the **gaming experience**: helping players consistently make the **right loadout choices**, without exposing them to unnecessary technical or analytical complexity.
 
-- **cod-armory-lab-api** — API and core resolution engine (base → overrides → patch view)
-- **cod-armory-lab-data** — Versioned datasets (registry, base data, patch overrides, sources)
-- **cod-armory-lab-cli** — Tooling (diff, validation, changelog generation, import/export)
-- **cod-armory-lab-web** — Player UI (comparison, loadouts, history) *(optional)*
-- **cod-armory-lab-schemas** — Shared contracts (OpenAPI/JSON Schema/Proto) *(optional)*
+---
 
-## Key Concepts
+## 🎮 What is Cod Armory Lab?
 
-- **Immutable IDs**: technical identifiers never change and are never reused.
-- **Patch overrides**: balance updates are applied as versioned overrides rather than rewriting history.
-- **Full traceability**: every change is dated, sourced, and reversible.
-- **Comparable views**: build accurate “as-of patch” snapshots for analysis and UI.
+Cod Armory Lab is an internal platform that structures and tracks **weapons, attachments, and loadouts** over time, ensuring they remain comparable before and after every patch.
 
-## Typical Workflow
+Patch changes, renames, balance adjustments, and removals are handled in a way that preserves **history, clarity, and player relevance**.
 
-1. Add or update base entities in `cod-armory-lab-data`
-2. Add patch overrides for balance changes
-3. Run `cod-armory-lab-cli` to validate and produce diffs/changelogs
-4. Serve resolved snapshots through `cod-armory-lab-api`
-5. Display comparisons in `cod-armory-lab-web`
+The player never needs to think about versions or data pipelines — the system exists solely to support **better in‑game decisions**.
 
-## Contributing
+---
 
-- Use PRs for all changes
-- Add sources for patch changes (patch notes, season notes, hotfix notes)
-- Run validation before submitting
+## ❓ Why this project exists
 
-## License
+In Call of Duty‑style games, frequent patches constantly reshape the meta:
 
-TBD (MIT/Apache-2.0 recommended for open tooling; data licensing depends on sources).
+* Weapons are buffed or nerfed
+* Attachments change behavior
+* Popular loadouts become obsolete overnight
+
+Most tools focus on **raw stats or analytics**, forcing players to interpret complex data themselves.
+
+Cod Armory Lab exists to solve this differently:
+
+* Keep **history intact**
+* Make **comparisons reliable**
+* Let data work **quietly in the background**
+
+So players can focus on what matters: **being ready for the fight**.
+
+---
+
+## ✅ What it gives players
+
+* Confidence that a loadout choice is still relevant
+* Clear before / after patch comparisons
+* Historical visibility without information overload
+* Consistency across seasons and balance passes
+
+In short:
+
+> **Better gear choices, with zero cognitive friction.**
+
+---
+
+## 🧠 Core Principles
+
+### Player‑first mindset
+
+Data is never the product. **The player’s decision is.**
+
+### Immutable identity
+
+Weapons and attachments keep stable technical identifiers across all patches.
+
+### Patch‑based evolution
+
+Balance changes are applied as **overrides**, never by rewriting history.
+
+### Transparent tooling
+
+Graphs and comparisons support decisions without demanding interpretation.
+
+---
+
+## 🧩 Ecosystem
+
+Cod Armory Lab is composed of several internal components:
+
+* **cod-armory-lab-api**
+  Core resolution engine serving patch‑accurate snapshots
+
+* **cod-armory-lab-data**
+  Versioned weapon, attachment, and patch datasets
+
+* **cod-armory-lab-cli**
+  Tooling for validation, diffing, and changelog generation
+
+* **cod-armory-lab-web** *(planned)*
+  Player‑facing interface for comparison and exploration
+
+Each component is designed to evolve independently while remaining consistent with the global vision.
+
+---
+
+## 🛠️ Project Status
+
+* 🔒 Private repository
+* 🚧 Active development
+* 🧪 Models and foundations stabilizing
+* 🎮 Strong focus on long‑term player relevance
+
+The current priority is building a **robust and future‑proof foundation** before any public exposure.
+
+---
+
+## 👥 Team & Collaboration
+
+Even as a private project, Cod Armory Lab is built with **future collaboration** in mind:
+
+* Clear conventions
+* Strong documentation
+* Shared player‑centric culture
+
+New contributors should always ask:
+
+> *Does this help the player make a better choice?*
+
+If the answer is yes, the change is aligned with the project.
+
+---
+
+## 📄 Branding
+
+Visual and identity guidelines are documented in:
+
+* `BRANDING.md`
+
+All visuals, UI work, and communication should follow these principles to preserve coherence.
+
+---
+
+## 🧭 Final Note
+
+Cod Armory Lab is not about chasing the meta.
+
+It is about **understanding it**, respecting its history, and giving players the tools to stay prepared — patch after patch.
